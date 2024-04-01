@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Galactic Getaways</title>
     <link rel="stylesheet" href="main.css"></link>
 
@@ -13,14 +13,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div class="Mainbox">
+    <div class="Mainbox container-fluid">
 
         <!--navbar  -->
-        <div class="NavigationBar">
-          <div class="Frame3">
+        <div class="NavigationBar row">
+          <div class="Frame3 col-sm-11">
             <img class="Logo" style="width: 66px; height: 66px" src="assets/logo.png" />
             <div style="position: relative">
               <button class="HomeButton"> Home </button>
@@ -30,11 +33,11 @@
                 <a href="#destinations"> Destinations </a> 
             </button>
             </div>
-          <div class="OutlineButton">
+            <a href="#app"> <div class="OutlineButton col-sm-1">
             <button class="GetTheApp">
-                <a href="#app"> Get the app </a>
+                 Get the app 
             </button>
-          </div>
+          </div></a>
         </div>
 
         <!-- Header section -->
@@ -62,19 +65,23 @@
 
         <!-- Stellar section -->
         <div class="StellarSectionBorder"> 
-            <div class="StellarSection">
+            <div class="StellarSection container-fluid">
 
                 <div class="StellarText">
-                    <div style="width: 100%; height: 82px; font-size: 56px; font-family: Bebas Neue; font-weight: 400; line-height: 61.60px;">
-                        <a id="destinations"> A Stellar Selection </a>
+                    <div class="row">
+                        <div style="width: 100%; height: 82px; font-size: 56px; font-family: Bebas Neue; font-weight: 400; line-height: 61.60px;">
+                            <a id="destinations"> A Stellar Selection </a>
+                        </div>
                     </div>
-                    <div style="width: 30%; height: 142px; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word;">
-                        Explore three breathtaking destinations, each with its own unique charm and mystery.
+                    <div class="row">
+                        <div class="col-sm-12" style="width: 100%; height: 142px; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word;">
+                            Explore three breathtaking destinations, each with its own unique charm and mystery.
+                        </div>
                     </div>
                 </div>
 
-                <div class="DezzyCardHolder">
-                    <div class="DezzyCard">
+                <div class="DezzyCardHolder row">
+                    <div class="DezzyCard col-sm-3">
                         <div class="CardContent">
                             <img class="Planet" src="assets/mars.png" />
                             <div class="CardHeading">
@@ -87,7 +94,7 @@
                         </div>
                     </div>
                     
-                    <div class="DezzyCard">
+                    <div class="DezzyCard col-sm-3">
                         <div class="CardContent">
                             <img class="Planet" src="assets/saturn.png" />
                             <div class="CardHeading">
@@ -100,7 +107,7 @@
                         </div>
                     </div>
                     
-                    <div class="DezzyCard">
+                    <div class="DezzyCard col-sm-3">
                         <div class="CardContent">
                             <img class="Planet" src="assets/moon.png" />
                             <div class="CardHeading">
@@ -113,6 +120,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 

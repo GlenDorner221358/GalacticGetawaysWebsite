@@ -234,7 +234,6 @@ button{
     width: auto; 
     height: fit-content; 
     min-height: 100px;
-    height: 605px;
 }
 
 .StellarText{
@@ -402,8 +401,9 @@ button{
     padding-top: 80px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 20px;
     width: 994px; 
-    height: 200px;  
+    height: fit-content;  
     background: #7920C2; 
     border-radius: 30px;
     flex-direction: column; 
