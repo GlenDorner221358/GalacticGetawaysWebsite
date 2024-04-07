@@ -26,37 +26,64 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: white !important;
+    text-decoration: none;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
 a:visited{
     color: white;
     text-decoration: none;
 }
 
 .Mainbox{
-    width: auto; 
+    width: 100%; 
     height: fit-content; 
     min-height: 100px;
     background: #0C0519;
+    /* transform: translate(-%, 0%); */
 }
 
 button{
     font-family: "inter", sans-serif;
+    color: white;
 } 
+
+button:hover{
+    color: white !important;
+}
 
 /* NAVBAR SECTION */
 .NavigationBar{
     width: 100%; 
     height: 104px; 
-    position: absolute;
+    position: fixed;
+    z-index: 9;
     background: linear-gradient(180deg, rgba(12, 5, 25, 0.70) 0%, rgba(12, 5, 25, 0.30) 70%, rgba(12, 5, 25, 0) 100%)
 }
 
+.nav{
+    background-color: transparent;
+}
+
+.bruh{
+    position: fixed;
+    color: white; 
+    font-size: 18px; 
+}
+
 .Frame3{
-    left: 100px; 
+    left: 1%; 
     top: 18px; 
     position: absolute; 
     justify-content: flex-start; 
     align-items: center; 
-    gap: 72px; 
+    gap: 1%; 
     display: inline-flex
 }
 
@@ -70,7 +97,7 @@ button{
     font-family: Inter; 
     font-weight: 700; 
     word-wrap: break-word;
-    margin-top: -10px;
+    margin-top: -14px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -79,8 +106,8 @@ button{
 .Line1{
     width: 23px; 
     height: 0px; 
-    left: 17px; 
-    top: 33px; 
+    left: 19px; 
+    top: 30px; 
     position: absolute; 
     border: 3px #7920C2 solid;
     margin-top: -10px; 
@@ -99,13 +126,22 @@ button{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    text-decoration: none !important;
+}
+
+.DestinationsButton:hover{
+    color: white  !important;
+}
+
+.HomeButton:hover{
+    color: white  !important;
 }
 
 .OutlineButton{
     width: 160px; 
     padding-top: 16px; 
     padding-bottom: 16px; 
-    right: 100px; 
+    right: 5%; 
     top: 24px; 
     position: absolute; 
     border-radius: 100px; 
@@ -117,16 +153,16 @@ button{
     display: inline-flex;
     cursor: pointer;
     transition: box-shadow 2s;
+    transition: background-color 1s;
 
 }
 
 .OutlineButton:hover{
     background: linear-gradient(93deg, #F2994A 0%, #CE7629 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 41px 66px 22px 0px rgba(242, 153, 74, 0.00), 26px 42px 20px 0px rgba(242, 153, 74, 0.01), 15px 24px 17px 0px rgba(242, 153, 74, 0.05), 7px 11px 12px 0px rgba(242, 153, 74, 0.09);
-    width: 160px; 
     padding-top: 16px; 
     padding-bottom: 16px; 
-    right: 100px; 
+    right: 5%; 
     top: 24px; 
     position: absolute; 
     border-radius: 100px; 
@@ -147,6 +183,8 @@ button{
     line-height: 22.40px; 
     background-color: transparent;
     border: none;
+    transition: background-color 1s;
+
 }
 
 
@@ -155,9 +193,11 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 833px;
+    height: 983px;
     width: 100%;
     background-image: url('assets/headerBackground.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Frame2{ 
@@ -189,11 +229,13 @@ button{
     display: flex;
     cursor: pointer;
     transition: box-shadow 1s;
-
+    
 }
 
 .PrimaryButton:hover{
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 41px 66px 22px 0px rgba(121, 32, 194, 0.00), 26px 42px 20px 0px rgba(121, 32, 194, 0.01), 15px 24px 17px 0px rgba(121, 32, 194, 0.05), 7px 11px 12px 0px rgba(121, 32, 194, 0.09);
+    box-shadow: 0px -4px 4px 0px rgba(255, 255, 255, 0.25), -41px -66px 22px 0px rgba(255, 255, 255, 0), -26px -42px 20px 0px rgba(255, 255, 255, 0.01), -15px -24px 17px 0px rgba(255, 255, 255, 0.05), -7px -11px 12px 0px rgba(242, 153, 74, 0.09);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 41px 66px 22px 0px rgba(242, 153, 74, 0.00), 26px 42px 20px 0px rgba(242, 153, 74, 0.01), 15px 24px 17px 0px rgba(242, 153, 74, 0.05), 7px 11px 12px 0px rgba(242, 153, 74, 0.09);
+
 }
 
 .SecondaryButton{
@@ -216,7 +258,9 @@ button{
 }
 
 .SecondaryButton:hover{
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 41px 66px 22px 0px rgba(121, 32, 194, 0.00), 26px 42px 20px 0px rgba(121, 32, 194, 0.01), 15px 24px 17px 0px rgba(121, 32, 194, 0.05), 7px 11px 12px 0px rgba(121, 32, 194, 0.09);
+    /* box-shadow: 0px -4px 4px 0px rgba(255, 255, 255, 0.25), -41px -66px 22px 0px rgba(255, 255, 255, 0), -26px -42px 20px 0px rgba(255, 255, 255, 0.01), -15px -24px 17px 0px rgba(255, 255, 255, 0.05), -7px -11px 12px 0px rgba(242, 153, 74, 0.09); */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 41px 66px 22px 0px rgba(242, 153, 74, 0.00), 26px 42px 20px 0px rgba(242, 153, 74, 0.01), 15px 24px 17px 0px rgba(242, 153, 74, 0.05), 7px 11px 12px 0px rgba(242, 153, 74, 0.09);
+
 }
 
 
@@ -256,7 +300,7 @@ button{
 }
 
 .DezzyCard{
-    width: 377px; 
+    width: 50%; 
     height: 383px; 
     position: relative;
     background: linear-gradient(0deg, #180C60 0%, rgba(50, 25, 198, 0.00) 100%);
@@ -319,7 +363,8 @@ button{
 /* BOTTOM SECTION */
 .BottomSection{
     width: 100%;
-    height: 1172px;
+    min-height: 1172px;
+    height: 80%;
     background-image: url('assets/mobile_app_background.jpeg');
     background-position: center;
     background-repeat: no-repeat;
@@ -328,7 +373,7 @@ button{
 
 .BottomHeader{
     width: 100%; 
-    height: 173px; 
+    height: 15%; 
     text-align: center; 
     color: white; 
     font-size: 56px; 
@@ -360,7 +405,7 @@ button{
 }
 
 .iPong{
-    margin-top: -210px;
+    margin-top: -15%;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -368,17 +413,21 @@ button{
 }
 
 .AppleIphone15ProWhiteTitanium1{
-    width: 456px; 
-    height: 937px; 
+    width: 31%;
+    height: auto;
     transform: rotate(90deg); 
 }
 
-.Astronaut{
-    width: 133px; 
-    height: 184px; 
+.moonbase1{
+    width: 100%;
+    height: fit-content;
     position: absolute;
+    transform: translate(0%, -100%);
+}
+
+.Astronaut{
+    width: 15%; 
     left: 220px;
-    transform: translate(0%, -170%);
 }
 
 
@@ -398,11 +447,10 @@ button{
 
 .ContactCard{
     margin-top: -130px;
-    padding-top: 80px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 20px;
-    width: 994px; 
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    width: fit-content; 
     height: fit-content;  
     background: #7920C2; 
     border-radius: 30px;
@@ -439,13 +487,17 @@ button{
     font-family: Inter; 
     font-weight: 400; 
     display: flex;
-    width: 311px;
+    width: 10%;
     padding: 16px 20px;
     align-items: center;
     gap: 10px;
     border-radius: 50px;
     border: 2px solid var(--White, #FFF);
     background-color: transparent;
+}
+
+input::placeholder{
+    color: #180C60;
 }
 
 .Email{
