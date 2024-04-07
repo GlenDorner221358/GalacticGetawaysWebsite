@@ -60,57 +60,34 @@ button:hover{
 
 /* NAVBAR SECTION */
 .NavigationBar{
-    width: 100%; 
-    height: 104px; 
+    width: auto; 
+    max-width: 99%;
+    margin-right: 1%;
+    height: fit-content; 
     position: fixed;
     z-index: 9;
-    background: linear-gradient(180deg, rgba(12, 5, 25, 0.70) 0%, rgba(12, 5, 25, 0.30) 70%, rgba(12, 5, 25, 0) 100%)
+    background: linear-gradient(180deg, rgba(12, 5, 25, 0.70) 0%, rgba(12, 5, 25, 0.30) 70%, rgba(12, 5, 25, 0) 100%);
 }
 
 .nav{
     background-color: transparent;
 }
 
-.bruh{
-    position: fixed;
-    color: white; 
-    font-size: 18px; 
-}
-
 .Frame3{
-    left: 1%; 
-    top: 18px; 
-    position: absolute; 
     justify-content: flex-start; 
     align-items: center; 
-    gap: 1%; 
     display: inline-flex
 }
 
 .HomeButton{
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
     text-align: center; 
     color: white; 
     font-size: 18px; 
     font-family: Inter; 
     font-weight: 700; 
-    word-wrap: break-word;
-    margin-top: -14px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-}
-
-.Line1{
-    width: 23px; 
-    height: 0px; 
-    left: 19px; 
-    top: 30px; 
-    position: absolute; 
-    border: 3px #7920C2 solid;
-    margin-top: -10px; 
 }
 
 .DestinationsButton{
@@ -121,7 +98,6 @@ button:hover{
     font-size: 18px; 
     font-family: Inter; 
     font-weight: 700; 
-    margin-left: 72px;
     background-color: black;
     background-color: transparent;
     border: none;
@@ -140,16 +116,12 @@ button:hover{
 .OutlineButton{
     width: 160px; 
     padding-top: 16px; 
-    padding-bottom: 16px; 
-    right: 5%; 
-    top: 24px; 
-    position: absolute; 
+    padding-bottom: 16px;  
     border-radius: 100px; 
     overflow: hidden; 
     border: 4px #F2994A solid; 
     justify-content: center; 
     align-items: center; 
-    gap: 10px; 
     display: inline-flex;
     cursor: pointer;
     transition: box-shadow 2s;
@@ -162,15 +134,11 @@ button:hover{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 41px 66px 22px 0px rgba(242, 153, 74, 0.00), 26px 42px 20px 0px rgba(242, 153, 74, 0.01), 15px 24px 17px 0px rgba(242, 153, 74, 0.05), 7px 11px 12px 0px rgba(242, 153, 74, 0.09);
     padding-top: 16px; 
     padding-bottom: 16px; 
-    right: 5%; 
-    top: 24px; 
-    position: absolute; 
     border-radius: 100px; 
     overflow: hidden; 
     border: 4px #F2994A solid; 
     justify-content: center; 
     align-items: center; 
-    gap: 10px; 
     display: inline-flex;
     cursor: pointer;
 }
